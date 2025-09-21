@@ -5,12 +5,12 @@ function Person(name, age) {
 }
 
 Person.prototype.greet = function () {
-  console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+  console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 };
 
 // Employee constructor (inherits from Person)
 function Employee(name, age, jobTitle) {
-  Person.call(this, name, age); // inherit properties from Person
+  Person.call(this, name, age); // inherit properties
   this.jobTitle = jobTitle;
 }
 
